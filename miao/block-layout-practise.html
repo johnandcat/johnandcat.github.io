@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>JS Bin</title>
+  <style>
+    div {
+  width: 600px;
+  box-sizing:border-box;
+  margin-left:auto;
+  margin-right:auto;
+  }
+  article{
+    color: white;
+    background-color: black;
+  }
+  p[class="bac"] {
+    width: 600px;
+    margin-left:auto;
+    margin-right:auto;
+  }
+  ul {
+    padding: 0px;
+  }
+  div>ul>li:hover {background-color: red;
+  }
+  div>ul>li {
+    border: 3px solid;
+    width: 174px;
+    height: 34px;
+    line-height: 34px;
+    margin-top: 15px; 
+    background-color:pink;
+    list-style: none; 
+    padding: 0px;
+  }
+  div>ul>li:nth-child(n+5){
+    margin-left:210px;
+  }
+  div>ul>li:nth-child(n+9){
+    margin-left:420px;
+  }
+  div>ul>li:nth-child(4n+5){
+    margin-top:-205px;
+  }
+  spen>ul>li {
+    border-bottom: dotted;
+    list-style: none;
+  }
+  spen>ul>li:nth-child(5n) {
+    border-bottom: none;
+  }
+  p[class="abc"] {
+    background-color: #FF00FF;
+    text-align:center;
+  }
+  </style>
+</head>
+ <body>
+    <article><p class="bac">hello world 请调整浏览器窗口大小查看效果</p></article>
+    
+    <div><p>页面主体 宽度600px 页面主体 宽度600px 页面主体 
+        宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体
+         宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体
+          宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体
+           宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体
+            宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体
+             宽度600px</p>
+
+<ul>
+  <li>宽180高40(包含边框) <span></span></li>
+  <li>水平间隙30px <span></span></li>
+  <li>垂直间隙15px <span></span></li>
+  <li>边框宽度3px <span></span></li>
+  <li>产品 <span></span></li>
+  <li>产品 <span></span></li>
+  <li>产品 <span></span></li>
+  <li>产品 <span></span></li>
+  <li>产品 <span></span></li>
+  <li>产品 <span></span></li>
+  <li>产品 <span></span></li>
+  <li>产品 <span></span></li>
+</ul>
+
+   <spen><ul>
+     <li>link</li>
+     <li>link</li>
+     <li>link</li>
+     <li>link</li>
+     <li>link</li>
+   </ul></spen>
+</div>
+ <p class="abc" >©版权所有 <br> 
+本页所有布局均使用块元素</p>
+</body>
+</html>
