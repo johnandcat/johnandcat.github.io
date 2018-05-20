@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>iOS-checbox-twitter</title>
+  <style>
+    *{
+    margin:0;
+    }
+    input{
+    display: none;
+    }
+    /* iOS按钮 */
+    spen{
+    margin: 10px;
+    width: 80px;
+    height: 80px;
+    background: #F0EFEF;
+    border-radius: 40px;
+    position: absolute;
+    }
+    spen:hover {
+    transition-property:width;
+    width: 100px;
+    transition: width .2s;
+    transition-timing-function: cubic-bezier(.17,.67,.83,.67);
+    }
+    p label{
+    transition: background 1s;
+    transition-timing-function: cubic-bezier(.17,.67,.83,.67);
+    width: 200px;
+    height: 100px;
+    background: #ccccd6;
+    border-radius: 50px;
+    position: absolute;
+    }
+    p input:checked + label{
+    background:#8cc269;
+    }
+    p input:checked + label>spen{
+    left:100px;
+    }
+    /* 点赞 */
+    div{
+    width:100px;
+    height: 100px;
+    margin-left:auto;
+    margin-right:auto;
+    }
+    div input:checked + label .aaa{
+    width:100px;
+    height: 100px;
+    background-image: url(https://abs.twimg.com/a/1526339738/img/animations/web_heart_animation_edge.png);
+    background-position: -2800px 0;
+    transition: background 1s;
+    transition-timing-function: steps(27, end)
+    }
+    .aaa{
+    width:100px;
+    height: 100px;
+    background-image: url(https://abs.twimg.com/a/1526339738/img/animations/web_heart_animation_edge.png);
+    }
+    .aaa:hover{
+    width:100px;
+    height: 100px;
+    background-image: url(https://abs.twimg.com/a/1526339738/img/animations/web_heart_animation_edge.png);
+    background-position: -100px 0;
+    }
+  </style>
+</head>
+<body>
+    <!-- iOS按钮 -->
+ <p>
+   <input type="checkbox" id="abc">
+   <label for="abc"><spen></spen></label>
+  </p>
+  <!-- 点赞 -->
+ <div >
+    <input type="checkbox" id="zan">
+    <label for="zan">
+        <div class="aaa"></div>
+    </label>
+  </div>
+</body>
+</html>
