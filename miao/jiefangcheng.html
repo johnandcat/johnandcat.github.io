@@ -1,0 +1,46 @@
+
+ <script >
+    /* alert(即将开始计算请根据提示操作) */
+
+    var num = Number(prompt('一元二次方程输入"1",二元一次方程输入"2"'))
+if(num = 1){
+    /* alert(开始计算一元二次方程) */
+    var a = +prompt('请输入a的值（限数字0~9）')
+    var b = +prompt('请输入b的值（限数字0~9）')
+    var c = +prompt('请输入c的值（限数字0~9）')
+
+    var foo = b * b - 4 * a - c
+    var foo_a = Math.sqrt(foo)
+
+    var x1 = (- b + foo_a) / (2 * a)
+    var x2 = (- b - foo_a) / (2 * a)
+    if(x1 = x2){
+        document.writeln(x1)
+    }
+    else if 
+    document.writeln(x1)
+    document.write('<br>')
+    document.writeln(x2)
+}
+
+else if (num = 2){
+    /* alert(开始计算二元一次方程) */
+    var a = +prompt('请输入a的值（限数字0~9）')
+    var b = +prompt('请输入b的值（限数字0~9）')
+    var c = +prompt('请输入c的值（限数字0~9）')
+    var d = +prompt('请输入d的值（限数字0~9）')
+    var e = +prompt('请输入e的值（限数字0~9）')
+    var f = +prompt('请输入f的值（限数字0~9）')
+    
+    var x = (c * e - f * b) / (a * e - b * d)
+    var y = (c * d - f * a) / (b * d - a * e)
+ 
+    document.writeln(x)
+    document.write('<br>')
+    document.writeln(y)
+}
+else if (num != 2,1)
+alert(别捣乱)
+
+
+ </script>
