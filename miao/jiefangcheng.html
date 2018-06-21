@@ -1,10 +1,10 @@
 
  <script >
-    /* alert(即将开始计算请根据提示操作) */
+    alert("即将开始计算请根据提示操作")
 
     var num = Number(prompt('一元二次方程输入"1",二元一次方程输入"2"'))
-if(num = 1){
-    /* alert(开始计算一元二次方程) */
+if(num == 1){
+    alert("开始计算一元二次方程ax^2+bx+c=0")
     var a = +prompt('请输入a的值（限数字0~9）')
     var b = +prompt('请输入b的值（限数字0~9）')
     var c = +prompt('请输入c的值（限数字0~9）')
@@ -17,14 +17,16 @@ if(num = 1){
     if(x1 = x2){
         document.writeln(x1)
     }
-    else if 
+    else {
     document.writeln(x1)
     document.write('<br>')
     document.writeln(x2)
+    }
+    
 }
 
-else if (num = 2){
-    /* alert(开始计算二元一次方程) */
+else if (num == 2){
+    alert("开始计算二元一次方程{ax+by=c;dx+ey=f}")
     var a = +prompt('请输入a的值（限数字0~9）')
     var b = +prompt('请输入b的值（限数字0~9）')
     var c = +prompt('请输入c的值（限数字0~9）')
@@ -34,13 +36,26 @@ else if (num = 2){
     
     var x = (c * e - f * b) / (a * e - b * d)
     var y = (c * d - f * a) / (b * d - a * e)
- 
-    document.writeln(x)
-    document.write('<br>')
-    document.writeln(y)
+
+
+    /* if(a / d == b / e !== c / f) */
+    if(a / d == b / e&&b / e !== c / f) {
+
+        alert("无解")
+    }
+    else if(a / d == b / e&&b / e == c / f){
+        alert("无数解")
+    }
+    else if(a / d !== b / e ){
+        document.writeln("唯一解")
+        document.writeln(x)
+        document.write('<br>')
+        document.writeln(y)
+    }
+
 }
-else if (num != 2,1)
-alert(别捣乱)
+else/*  (num !== 1 , 2) */
+{alert("别捣乱")}
 
 
  </script>
