@@ -8,7 +8,7 @@ var johnandcat = {
     },
     compact: function (array) { //创建一个新数组，包含原数组中所有的非假值元素。例如false，null， 0，""，undefined，状语从句：NaN都是被认为的英文“假值”。
         var num = []
-        for (var i = 0; i < array.lenth; i++){
+        for (var i = 0; i < array.length; i++){
             if (array[i]) {
                 num.push(array[i])
             }
