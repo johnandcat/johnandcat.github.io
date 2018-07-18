@@ -10,7 +10,7 @@ var johnandcat = {
         var num = []
         for (var i = 0; i < array.lenth; i++){
             if (array[i]) {
-                arr.push(array[i])
+                num.push(array[i])
             }
         }
         return num
